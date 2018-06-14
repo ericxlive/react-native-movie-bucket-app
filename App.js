@@ -1,21 +1,36 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { View, Text } from 'react-native';
+import { Button, Label, Tabs } from './src/components/common';
 
-export default class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        
+        {/* then we call the Button.js */}
+        <Tabs>
+          None
+        </Tabs>
+
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
+const styles = {
   container: {
     flex: 1,
+    flexDirection: 'column',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+  text: {
+    paddingTop: 50,
+    fontWeight: '600', // Bold
+    fontSize: 15,
+    color: '#007aff',
+    alignSelf: 'flex-start',
+  }
+
+};
