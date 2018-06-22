@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import { Button, Label, Tabs } from './src/components/common';
+import { Button, Label } from './src/components/common';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        
         {/* then we call the Button.js */}
-        <Tabs>
-          None
-        </Tabs>
-
+        <Text>
+          Test
+        </Text>
       </View>
     );
   }
